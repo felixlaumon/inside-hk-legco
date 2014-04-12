@@ -1,0 +1,96 @@
+#main
+  border-left $separator
+
+#motion
+  margin 15px 0
+
+  // Assumes the left side is longer than the right side
+  .col-xs-8
+    border-right $separator
+
+  .motion-header
+    border-bottom $separator
+
+  h1, h3
+    font-family $font-family-serif
+    font-weight bold
+
+  h1
+    font-family $font-family-display
+    font-size $font-size-base * 1.6
+    margin 0
+    margin-bottom 10px
+
+  .byline p
+    display inline-block
+    vertical-align middle
+    margin-right 5px
+
+  p.result
+    color white
+    text-transform capitalize
+    padding 3px 5px
+    border-radius 2px
+    &.negatived
+      background-color $negatived
+    &.passed
+      background-color $passed
+
+  p.moved-by
+    font-family $font-family-serif
+    font-size $font-size-base * 1.1
+
+  .minor-byline
+    clearfix()
+    color #747474
+
+    .original-motion
+      float left
+
+    .sharing
+      float right
+
+  .details
+    font-size: $font-size-base * 0.9
+
+    section
+      margin-bottom 15px
+
+    h5
+      font-family $font-family-serif
+      font-weight bold
+      color #595959
+      margin-top 0
+      margin-bottom 5px
+    p
+      color #1F1F1F
+      font-weight regular
+      margin 0
+
+    ol, ul
+      padding-left 18px
+
+  .votebar
+    &.fc, &.gc
+      height 37px
+    &.overall
+      height 40px
+      margin-bottom 15px
+
+  .voting-breakdown
+    border-bottom $separator
+    padding-bottom 15px
+    
+    h3
+      font-size $font-size-base * 1.1
+      font-weight 600
+      margin-top 15px
+      margin-bottom 7px
+
+      span
+        text-transform capitalize
+        &.negatived
+          color $negatived
+        &.passed
+          color $passed
+

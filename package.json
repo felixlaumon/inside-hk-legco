@@ -1,0 +1,29 @@
+{
+  "name": "inside-hk-legco",
+  "version": "0.0.1",
+  "description": "Hong Kong LegCo Voting Visualizer",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Felix Lau <felixlaumon@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 0.10.25"
+  },
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "bootstrap-stylus": "git://github.com/Acquisio/bootstrap-stylus",
+    "browserify": "^4.1.11",
+    "d3": "^3.4.5",
+    "hk-legco-utils": "git://github.com/felixlaumon/hk-legco-utils.git",
+    "jade": "^1.3.1",
+    "jquery": "^2.1.0",
+    "nib": "^1.0.3",
+    "rivets": "^0.6.7",
+    "stylus": "^0.46.3",
+    "tiny-lr": "0.0.5",
+    "underscore": "^1.6.0"
+  }
+}

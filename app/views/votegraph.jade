@@ -1,0 +1,22 @@
+.col-xs-12
+  .votegraph
+    .controller
+      .control.btn-group
+        button.btn.btn-default.active(type='button').overview Overview
+        button.btn.btn-default(type='button').view-by-party View by Party
+        button.btn.btn-default.disabled(type='button').view-by-camp View by Pro-Beijing / Pan-Democracy Camp
+        button.btn.btn-default.disabled(type='button').view-by-con View by Constituency
+
+      .checkboxes
+        label
+          input(type='checkbox', disabled)
+          span Show Names
+
+      .search
+        input.form-control(placeholder='Name / Party / Constituency', disabled)
+
+    include member-tooltip
+
+    .party-votebars
+
+    svg.force-layout

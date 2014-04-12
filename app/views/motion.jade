@@ -1,0 +1,51 @@
+#motion
+  .row
+    .col-xs-8
+      .motion-header
+        h1(rv-text='motion:name | capitalize')
+        .byline
+          p.result(rv-text='motion:result' rv-class='motion:result')
+          p.moved-by Moved By:
+            =  ' '
+            span(rv-text='motion:mover')
+        .overall.votebar
+        .minor-byline
+          a.original-motion.disabled Wording of Original Motion (pdf) »
+          p.sharing Share on:
+            =  ' '
+            a.twitter.disabled Twitter
+            =  ' | '
+            a.facebook.disabled Facebook
+            =  ' | '
+            a.weibo.disabled Weibo
+      .voting-breakdown
+        h3 Functional Constituencies:
+          =  ' '
+          span(rv-class='motion:fc_result' rv-text='motion:fc_result')
+        div.fc.votebar
+        h3 Geographical Constituencies:
+          =  ' '
+          span(rv-class='motion:gc_result' rv-text='motion:gc_result')
+        div.gc.votebar
+    .col-xs-4
+      .details
+        section
+          h5 Bill Details
+          p Date:
+            =  ' '
+            span(rv-text='motion:date')
+          p Time:
+            =  ' '
+            span(rv-text='motion:time')
+        section
+          h5 View Ammendments
+          ol
+            li: a ...
+        section
+          h5 References
+          ul
+            li: a Meeting agenda
+            li: a Voting result (pdf) »
+            li: a Reports (pdf) »
+  .row
+    include votegraph

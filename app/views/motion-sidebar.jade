@@ -1,0 +1,9 @@
+#motion-sidebar
+  #motion-scroll-container
+    div.list-container
+      h4 Member Bills
+        span  13-14
+      ul.motions
+        li.motion(rv-each-motion='motions:')
+          p
+            a(rv-href='motion:id | sidebar_href') {{ motion:name | capitalize }}

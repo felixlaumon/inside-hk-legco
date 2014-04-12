@@ -1,0 +1,19 @@
+{
+  // Enforcing
+  "eqeqeq": true,
+  "undef": true,
+  "quotmark": "single",
+  "noarg": true,
+  "trailing": true,
+  "noempty": true,
+  "latedef": true,
+
+  // Environments
+  "esnext": true,
+  "browser": true,
+  "node": true,
+
+  // Globals
+  "predef": [
+  ]
+}

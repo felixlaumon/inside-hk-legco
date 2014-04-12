@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    script(src='//use.typekit.net/hsp2vnj.js')
+    script.
+      try{Typekit.load();}catch(e){}
+    title Inside Hong Kong LegCo
+    link(href='./main.css' rel='stylesheet')
+body
+  #container
+    include views/navbar
+
+    .container
+      .row#content
+        .col-xs-3#sidebar
+          include views/motion-sidebar
+        .col-xs-9#main
+          include views/motion
+
+  script(src='app.js')

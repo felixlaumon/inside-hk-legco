@@ -1,0 +1,66 @@
+.votegraph
+  padding-top 15px
+  position relative
+
+  .controller
+    position absolute
+    top 17px
+    left 0
+    width 100%
+
+    .control
+      position absolute
+      left 0
+
+    .checkboxes
+      position absolute
+      top 40px
+
+      span
+        margin-left 3px
+        font-weight normal
+        font-size $font-size-base * 0.9
+
+    .search
+      position absolute
+      right 0
+      width 180px
+
+  svg.force-layout
+    width 100%
+    height 900px
+
+    text
+      fill black
+      font-size 9px
+      font-family $font-family-sans-serif
+      text-anchor middle
+      pointer-events none
+
+    line
+      stroke #ccc
+      stroke-width 1px
+
+      &[data-type='vote_link']
+        stroke #555
+
+  .party-votebars
+    .votebar-container
+      height 40px
+
+      .party-color-block
+        width 10px
+        height 10px
+        background-color #8BBE50
+        display inline-block
+        margin-right 5px
+
+      .party-name
+        margin-right 5px
+        font-family $font-family-serif
+        font-weight 600
+        display inline-block
+
+      svg
+        width 100%
+        height 100%

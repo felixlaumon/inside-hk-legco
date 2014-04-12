@@ -1,0 +1,20 @@
+#member-tooltip
+  .vote(rv-class='member:vote | toLowerCase', rv-text='member:vote | toLowerCase')
+
+  .main
+    h2.name(rv-text='member:name')
+
+    .parties
+      ul
+        li.parties-tpl
+          div.party-color-block
+          span.party-name(rv-text='party.party_name')
+          span.party-position
+
+    p.con-type(rv-text='member:con_type')
+    p.con-area(rv-text='member:con_area')
+
+  .references
+    ul
+      li Registrable Interests
+      li Speech

@@ -1,0 +1,85 @@
+#member-tooltip
+  position absolute
+  top 200px
+  min-width 250px
+  padding 12px 14px
+  font-family $font-family-serif
+  z-index 99999
+
+  background-color white
+  box-shadow 0 0 4px rgba(0,0,0,0.3)
+
+  .vote
+    position absolute
+    top 12px
+    right 14px
+
+    font-family $font-family-sans-serif
+    font-weight bold
+    text-transform uppercase
+    color white
+
+    padding 1px 5px
+    border-radius 2px
+
+    &.yes
+      background-color $passed
+
+    &.no
+      background-color $negatived
+
+    &.absent, &.present, &.abstain
+      background-color $abstain
+
+  h2.name
+    font-weight bold
+    font-size $font-size-base * 1.2
+    margin 0
+
+  .parties
+    margin-top 10px
+    margin-bottom 8px
+
+    ul
+      margin 0
+      padding 0
+      list-style none
+
+    li
+      margin 0
+
+    .party-color-block
+      width 10px
+      height 10px
+      background-color #8BBE50
+      display inline-block
+      margin-right 5px
+
+    .party-name
+      font-weight 600
+      margin-right 5px
+
+    .party-position
+      font-size $font-size-base * 0.9
+      font-family $font-family-sans-serif
+      font-weight 600
+      color #727272
+
+  .con-type, .con-area
+    font-family $font-family-sans-serif
+    font-weight 600
+    font-size $font-size-base * 0.9
+    margin 0
+
+  .references
+    margin-top 10px
+    padding-top 10px
+    border-top $separator
+
+    font-family $font-family-sans-serif
+    font-size $font-size-base * 0.9
+    color #727272
+
+    ul
+      padding-left 20px
+      margin-bottom 0
