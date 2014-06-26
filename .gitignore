@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 npm-debug.log
-app.js
+/app.js
 *.html
 *.css
 tiny-lr.pid
