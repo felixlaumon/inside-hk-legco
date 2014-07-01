@@ -4,6 +4,8 @@ jade = node_modules/.bin/jade
 browserify = node_modules/.bin/browserify
 stylus = node_modules/.bin/stylus
 nib = ./node_modules/nib/lib/nib
+server = ./node_modules/.bin/http-server
+PORT ?= 7000
 
 all: app.js index.html main.css
 
@@ -26,4 +28,7 @@ main.css: app/main.styl app/views/*.styl variables.styl
 clean:
 	rm -f app.js index.html main.css
 
-.PHONY: clean
+serve:
+	$(server) -p $(PORT)
+
+.PHONY: clean serve

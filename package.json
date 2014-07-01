@@ -4,13 +4,14 @@
   "description": "Hong Kong LegCo Voting Visualizer",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "postinstall": "make"
   },
   "author": "Felix Lau <felixlaumon@gmail.com>",
   "license": "MIT",
   "devDependencies": {},
   "engines": {
-    "node": ">= 0.10.25"
+    "node": "0.10.x"
   },
   "dependencies": {
     "backbone": "^1.1.2",
@@ -18,6 +19,7 @@
     "browserify": "^4.1.11",
     "d3": "^3.4.5",
     "hk-legco-utils": "git://github.com/felixlaumon/hk-legco-utils.git",
+    "http-server": "^0.6.1",
     "jade": "^1.3.1",
     "jquery": "^2.1.0",
     "nib": "^1.0.3",
