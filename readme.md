@@ -1,5 +1,7 @@
 # inside-hk-legco
 
+Visualization for HK Legco Voting Record. Demo available at https://inside-hk-legco.herokuapp.com.
+
 ## build
 
 ````sh
